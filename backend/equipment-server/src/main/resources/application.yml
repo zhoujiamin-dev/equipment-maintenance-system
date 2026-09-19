@@ -1,0 +1,32 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: ${DB_URL:jdbc:mysql://localhost:3309/equipment_db?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai}
+    username: ${DB_USERNAME:root}
+    password: ${DB_PASSWORD:}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  data:
+    redis:
+      host: ${REDIS_HOST:localhost}
+      port: ${REDIS_PORT:6379}
+      timeout: 3000ms
+
+deepseek:
+  api-key: ${DEEPSEEK_API_KEY:}
+
+jwt:
+  secret: ${JWT_SECRET:}
+  expiration: 86400000
+
+pgvector:
+  datasource:
+    url: ${PGVECTOR_URL:jdbc:postgresql://localhost:5432/equipment_rag}
+    username: ${PGVECTOR_USERNAME:postgres}
+    password: ${PGVECTOR_PASSWORD:}
+    driver-class-name: org.postgresql.Driver
+
+embedding:
+  url: ${EMBEDDING_URL:http://127.0.0.1:8001/embed}

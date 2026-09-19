@@ -1,0 +1,67 @@
+# =========================
+# Environment / Secrets
+# =========================
+.env
+**/.env
+.env.*
+**/.env.*
+
+# =========================
+# Backend - Java / Maven
+# =========================
+target/
+**/target/
+
+*.class
+*.jar
+*.war
+
+# =========================
+# Frontend - Node / Vite
+# =========================
+node_modules/
+**/node_modules/
+
+dist/
+**/dist/
+
+.vite/
+**/.vite/
+
+# =========================
+# IDE
+# =========================
+.idea/
+**/.idea/
+
+.vscode/
+**/.vscode/
+
+*.iml
+
+# =========================
+# Logs
+# =========================
+*.log
+logs/
+**/logs/
+
+# =========================
+# OS
+# =========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================
+# Temporary files
+# =========================
+*.tmp
+*.temp
+*.swp
+*.swo
+# Local HTTP test files
+**/test.http
+
+# Local password helper test
+**/PasswordTest.java
